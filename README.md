@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Linear Regression to Predict MPG
-![Linear_regression] (https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_1.jpg)
+    ![Linear_regression](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/Deliverable_1.jpg)
 
 1) Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
     Vehicle length 2.6e-12 and ground clearance 5.21e-08 variables provide a non-random amount of variance to the mpg values in the dataset. Since the Pr < 0.05 this meand that both variables have significant impact on the mpg values. 
@@ -12,32 +12,39 @@
 
 ## Summary Statistics on Suspension Coils
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
 Total Summary Statistics
+
     ![Summary](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/D2_ttl_smry.jpg)
 
 Summary Statistics by Lot
+
     ![Summary_Lot](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/D2_lot_smry.jpg)
 
 Based on the total summary we could assume that all manufacturing lots in total meet the design specifications since the variance is 62.3 it does not exceed the 100 limit. By double clicking by lot, we find that Lot 3 with a 170.28 variance exceeds the 100 limit and is driving the total variance to 62, since the other two lots are below 10.
 
 ## T-Tests on Suspension Coils
 All lots T-test
+
     ![All_Ttest](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/D3_All_ttest.jpg)
 
 With a p-value of 0.06 that is higher than the assumed significance level of 0.05 we don't have enough evidence to support rejecting the null hypothesis. The mean of all lots is 1498.78 which is statistically similar to the assumed population mean of 1500. 
 
 T-test by lot
 Lot 1
+
     ![Lot1_Ttest](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/D3_lot_1_ttest.jpg)
 
 With a p-value of 1 we fail to reject the null hypothesis, considering the significance level of 0.05
 
 Lot 2
+
     ![Lot2_Ttest](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/D3_lot_2_ttest.jpg)
 
 With a p-value of 0.6 we fail to reject the null hypothesis, considering the significance level of 0.05.
 
 Lot 3
+
     ![Lot3_Ttest](https://github.com/Jimena-QM/MechaCar_Statistical_Analysis/blob/main/images/D3_lot_3_ttest.jpg)
 
 With a p-value of 0.04 we can reject the null hypothesis. Also, the mean of this lot is signficantly different from the 1500 and from the other 2 lots. These may indicate that this lot should be evaluated further and may need to be discarded from being used. 
